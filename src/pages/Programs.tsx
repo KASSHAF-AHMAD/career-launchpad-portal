@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { programs } from "@/data/programs";
 import ProgramCard from "@/components/shared/ProgramCard";
 import { Link } from "react-router-dom";
-import { Calendar, Clock, Award, Users, Briefcase, Target, BarChart } from "lucide-react";
+import { Calendar, Clock, Award, Users, Briefcase, Target, FileText, PenLine, ClipboardCheck } from "lucide-react";
 
 const Programs = () => {
   return (
@@ -169,7 +169,7 @@ const Programs = () => {
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <div className="text-center mb-6">
                 <div className="bg-brand-blue/10 p-4 rounded-full inline-block mb-4">
-                  <Briefcase className="h-8 w-8 text-brand-blue" />
+                  <FileText className="h-8 w-8 text-brand-blue" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Resume Revamp</h3>
               </div>
@@ -188,7 +188,11 @@ const Programs = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-brand-teal mr-2">•</span>
-                  <span>Cover letter templates</span>
+                  <span>Cover letter templates and guidance</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Personal branding strategy</span>
                 </li>
               </ul>
             </div>
@@ -197,7 +201,7 @@ const Programs = () => {
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <div className="text-center mb-6">
                 <div className="bg-brand-blue/10 p-4 rounded-full inline-block mb-4">
-                  <Users className="h-8 w-8 text-brand-blue" />
+                  <PenLine className="h-8 w-8 text-brand-blue" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Mock Interviews</h3>
               </div>
@@ -208,15 +212,19 @@ const Programs = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-brand-teal mr-2">•</span>
-                  <span>Behavioral question practice</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-brand-teal mr-2">•</span>
                   <span>Technical interview simulation</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-brand-teal mr-2">•</span>
-                  <span>Feedback and improvement strategies</span>
+                  <span>Behavioral question practice</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Real-time feedback and coaching</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Salary negotiation training</span>
                 </li>
               </ul>
             </div>
@@ -225,7 +233,7 @@ const Programs = () => {
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <div className="text-center mb-6">
                 <div className="bg-brand-blue/10 p-4 rounded-full inline-block mb-4">
-                  <Target className="h-8 w-8 text-brand-blue" />
+                  <ClipboardCheck className="h-8 w-8 text-brand-blue" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Career Coaching</h3>
               </div>
@@ -236,15 +244,19 @@ const Programs = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-brand-teal mr-2">•</span>
-                  <span>Personal brand development</span>
+                  <span>Job search strategy development</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-brand-teal mr-2">•</span>
-                  <span>Networking strategies</span>
+                  <span>Professional networking guidance</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-brand-teal mr-2">•</span>
-                  <span>Salary negotiation guidance</span>
+                  <span>Career path planning</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Industry insights and mentorship</span>
                 </li>
               </ul>
             </div>
@@ -278,3 +290,4 @@ const Programs = () => {
 };
 
 export default Programs;
+

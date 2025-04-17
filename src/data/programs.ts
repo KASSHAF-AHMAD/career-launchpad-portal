@@ -52,3 +52,4 @@ export const programs: Program[] = [
     slug: "accounting"
   }
 ];
+
