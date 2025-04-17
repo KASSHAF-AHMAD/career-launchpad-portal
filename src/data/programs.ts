@@ -43,12 +43,12 @@ export const programs: Program[] = [
   },
   {
     id: 4,
-    title: "Digital Marketing Specialist",
-    description: "Gain expertise in multiple aspects of digital marketing, from SEO to social media management and content creation. Learn to create and execute effective marketing campaigns.",
+    title: "Accounting",
+    description: "Gain expertise in accounting principles, financial reporting, and industry-standard software. Learn to manage business finances and prepare for professional certification.",
     duration: "6 Weeks",
-    topics: ["SEO/SEM", "Social Media Marketing", "Content Strategy", "Email Marketing", "Analytics", "Paid Advertising", "Campaign Management"],
+    topics: ["Financial Accounting", "Tax Preparation", "QuickBooks", "Payroll Management", "Business Finance", "Audit Basics", "Excel for Accounting"],
     priceRange: "$2,999 - $3,999",
     image: "/placeholder.svg",
-    slug: "digital-marketing"
+    slug: "accounting"
   }
 ];

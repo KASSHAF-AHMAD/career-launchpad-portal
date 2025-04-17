@@ -1,4 +1,3 @@
-
 import { testimonials } from "@/data/testimonials";
 import TestimonialCard from "@/components/shared/TestimonialCard";
 import { Button } from "@/components/ui/button";
@@ -348,7 +347,7 @@ const Success = () => {
             Ready to Write Your Success Story?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Join thousands of professionals who have transformed their careers with Career Launchpad.
+            Join thousands of professionals who have transformed their careers with SKARION.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Link to="/programs">
@@ -364,7 +363,7 @@ const Success = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white/10 px-8"
+                className="bg-brand-teal border-white text-white hover:bg-brand-teal/90 px-8"
               >
                 Schedule Consultation
               </Button>

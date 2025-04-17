@@ -137,10 +137,10 @@ const Programs = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Choose Your Career Path
+              Our Industry-Focused Programs
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our specialized programs are designed to prepare you for specific career paths with high demand.
+              Specialized training designed to prepare you for real jobs with high demand.
             </p>
           </div>
           
@@ -152,75 +152,101 @@ const Programs = () => {
         </div>
       </section>
 
-      {/* Employer Partners */}
+      {/* Career Services Section */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Our Hiring Partners
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Join our programs and gain access to career opportunities with these leading employers.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center items-center">
-            {/* Placeholder logos - Replace with actual partner logos */}
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => (
-              <div key={item} className="h-16 w-32 bg-gray-200 rounded-md flex items-center justify-center">
-                <span className="text-gray-500 font-medium">Partner {item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Frequently Asked Questions
+              Comprehensive Career Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get answers to common questions about our programs and job placement services.
+              Our end-to-end support ensures you're fully prepared for your career transition.
             </p>
           </div>
-          
-          <div className="max-w-3xl mx-auto space-y-8">
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-4">How does your job placement service work?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Upon program completion, our career services team works directly with you to match your skills and career goals with our network of hiring partners. We help with resume optimization, interview preparation, and directly recommend you to hiring managers at companies seeking your specific skill set.
-              </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Resume Revamp */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="text-center mb-6">
+                <div className="bg-brand-blue/10 p-4 rounded-full inline-block mb-4">
+                  <Briefcase className="h-8 w-8 text-brand-blue" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Resume Revamp</h3>
+              </div>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Professional resume writing and optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>ATS-friendly formatting</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>LinkedIn profile optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Cover letter templates</span>
+                </li>
+              </ul>
             </div>
-            
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-4">Do I need prior experience to join a program?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Most of our programs are designed for beginners and require no prior experience. However, some advanced courses may have prerequisites. Each program page specifies any necessary background knowledge.
-              </p>
+
+            {/* Mock Interviews */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="text-center mb-6">
+                <div className="bg-brand-blue/10 p-4 rounded-full inline-block mb-4">
+                  <Users className="h-8 w-8 text-brand-blue" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Mock Interviews</h3>
+              </div>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Industry-specific interview preparation</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Behavioral question practice</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Technical interview simulation</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Feedback and improvement strategies</span>
+                </li>
+              </ul>
             </div>
-            
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-4">What payment options are available?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                We offer several payment options including upfront payment, monthly installments, and income share agreements for qualified students. We also have scholarship opportunities for eligible candidates.
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-4">What kind of job placement assistance do you provide?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Our career services include resume review, interview preparation, portfolio development, networking events, and direct connections with our hiring partners. We work with you until you secure a position.
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-4">Can I attend part-time while working?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Yes, many of our programs offer part-time and evening schedules specifically designed for working professionals. These typically run longer than our full-time programs to accommodate work schedules.
-              </p>
+
+            {/* Career Coaching */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="text-center mb-6">
+                <div className="bg-brand-blue/10 p-4 rounded-full inline-block mb-4">
+                  <Target className="h-8 w-8 text-brand-blue" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Career Coaching</h3>
+              </div>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>1:1 career strategy sessions</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Personal brand development</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Networking strategies</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-brand-teal mr-2">•</span>
+                  <span>Salary negotiation guidance</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
