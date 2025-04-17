@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
@@ -7,11 +6,10 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Career Launchpad</h3>
+            <h3 className="text-xl font-semibold mb-4">SKARION</h3>
             <p className="text-gray-300 mb-4">
-              Empowering professionals with the skills, knowledge, and connections they need to launch their dream careers.
+              Empowering individuals to achieve meaningful employment through skills training and strategic job placement.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -29,44 +27,25 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <Link to="/programs" className="text-gray-300 hover:text-white transition-colors">
-                  Programs & Training
-                </Link>
-              </li>
-              <li>
-                <Link to="/jobs" className="text-gray-300 hover:text-white transition-colors">
-                  Job Listings
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/success" className="text-gray-300 hover:text-white transition-colors">
-                  Success Stories
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="text-gray-300 hover:text-white transition-colors">
-                  Blog & Resources
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">
-                  Contact Us
-                </Link>
-              </li>
+              {[
+                { name: "Bootcamps", path: "/programs" },
+                { name: "Career Services", path: "/services" },
+                { name: "About Us", path: "/about" },
+                { name: "Success Stories", path: "/success" },
+                { name: "Contact", path: "/contact" }
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link to={link.path} className="text-gray-300 hover:text-white transition-colors">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
@@ -92,7 +71,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Subscribe</h3>
             <p className="text-gray-300 mb-4">

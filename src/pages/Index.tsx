@@ -1,4 +1,3 @@
-
 import Hero from "@/components/home/Hero";
 import ServicesOverview from "@/components/home/ServicesOverview";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
@@ -10,35 +9,27 @@ import JobCard from "@/components/shared/JobCard";
 import { jobs } from "@/data/jobs";
 import { blogPosts } from "@/data/blogPosts";
 import BlogPostCard from "@/components/shared/BlogPostCard";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Briefcase, Target, UserCheck } from "lucide-react";
 
 const Index = () => {
-  // Featured programs (first 3)
   const featuredPrograms = programs.slice(0, 3);
-  
-  // Featured jobs (first 3)
   const featuredJobs = jobs.slice(0, 3);
-  
-  // Latest blog posts (first 3)
   const latestPosts = blogPosts.slice(0, 3);
 
   return (
     <div>
-      {/* Hero Section */}
       <Hero />
-      
-      {/* Services Overview Section */}
       <ServicesOverview />
-      
+
       {/* Featured Programs Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Training Programs
+              Bootcamps Tailored for Career Success
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Industry-leading curriculum designed to quickly build in-demand skills and get you job-ready.
+              Industry-aligned curriculums designed to transform your career trajectory.
             </p>
           </div>
           
@@ -51,7 +42,7 @@ const Index = () => {
           <div className="mt-12 text-center">
             <Link to="/programs">
               <Button variant="outline" className="px-6">
-                View All Programs
+                Explore All Bootcamps
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -59,6 +50,35 @@ const Index = () => {
         </div>
       </section>
       
+      {/* Unique Value Proposition Section */}
+      <section className="py-16 bg-brand-blue text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="bg-white/20 p-4 rounded-full inline-block mb-4">
+                <Briefcase className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">End-to-End Support</h3>
+              <p>From skills training to direct job placement</p>
+            </div>
+            <div>
+              <div className="bg-white/20 p-4 rounded-full inline-block mb-4">
+                <Target className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Strategic Partnerships</h3>
+              <p>Connections with top employers in key industries</p>
+            </div>
+            <div>
+              <div className="bg-white/20 p-4 rounded-full inline-block mb-4">
+                <UserCheck className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Personalized Coaching</h3>
+              <p>1:1 career guidance and skill development</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="py-16 bg-brand-blue text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

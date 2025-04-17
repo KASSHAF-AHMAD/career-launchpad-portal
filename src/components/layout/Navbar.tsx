@@ -17,7 +17,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,21 +31,21 @@ const Navbar = () => {
       path: "/" 
     },
     { 
-      name: "Programs", 
+      name: "Bootcamps", 
       path: "/programs",
       dropdown: [
-        { name: "Career Development", path: "/programs#career" },
-        { name: "Technical Skills", path: "/programs#technical" },
-        { name: "Leadership Training", path: "/programs#leadership" },
+        { name: "OSP Program", path: "/programs#osp" },
+        { name: "Finance Bootcamp", path: "/programs#finance" },
+        { name: "Healthcare Admin", path: "/programs#healthcare" },
       ]
     },
     { 
-      name: "Jobs", 
-      path: "/jobs",
+      name: "Career Services", 
+      path: "/services",
       dropdown: [
-        { name: "Full-time Positions", path: "/jobs#full-time" },
-        { name: "Contract Work", path: "/jobs#contract" },
-        { name: "Remote Opportunities", path: "/jobs#remote" },
+        { name: "Resume Revamp", path: "/services#resume" },
+        { name: "Mock Interviews", path: "/services#interviews" },
+        { name: "Career Coaching", path: "/services#coaching" },
       ]
     },
     { 
@@ -54,17 +53,13 @@ const Navbar = () => {
       path: "/about",
       dropdown: [
         { name: "Our Story", path: "/about#story" },
-        { name: "Our Team", path: "/about#team" },
-        { name: "Our Mission", path: "/about#mission" },
+        { name: "Team", path: "/about#team" },
+        { name: "Mission & Vision", path: "/about#mission" },
       ]
     },
     { 
       name: "Success Stories", 
       path: "/success" 
-    },
-    { 
-      name: "Blog", 
-      path: "/blog" 
     },
     { 
       name: "Contact", 
@@ -78,14 +73,13 @@ const Navbar = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-brand-blue font-bold text-2xl">Career</span>
-              <span className="text-brand-teal font-bold text-2xl">Launchpad</span>
+              <span className="text-brand-blue font-bold text-2xl">SKARION</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-4">
-            <NavigationMenu className="hidden md:flex">
+            <NavigationMenu>
               <NavigationMenuList className="gap-2">
                 {navLinks.map((link) => (
                   <NavigationMenuItem key={link.name}>
@@ -126,7 +120,7 @@ const Navbar = () => {
               </NavigationMenuList>
             </NavigationMenu>
             <Button className="ml-4 bg-brand-blue hover:bg-brand-blue/90">
-              Enroll Now
+              Start Your Journey
             </Button>
           </div>
 
@@ -147,7 +141,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu, show/hide based on menu state */}
+      {/* Mobile menu */}
       <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {navLinks.map((link) => (
@@ -183,7 +177,7 @@ const Navbar = () => {
             </div>
           ))}
           <Button className="w-full mt-3 bg-brand-blue hover:bg-brand-blue/90">
-            Enroll Now
+            Start Your Journey
           </Button>
         </div>
       </div>
